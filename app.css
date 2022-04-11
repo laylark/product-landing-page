@@ -18,6 +18,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
 }
 .nav-bar ul {
   list-style: none;
@@ -51,21 +52,27 @@ body {
 #sushi-wrapper {
   display: flex;
   justify-content: flex-end;
-  padding-top: 5em;
+  align-items: center;
+  padding: 2.5em 0;
+  background-image: linear-gradient(
+      90deg,
+      rgba(42, 12, 134, 0.7),
+      rgba(42, 12, 134, 1)
+    ),
+    url("images/samurai.jpg");
+  background-size: cover;
+  background-position: left top;
 }
 #title {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 0.8em;
   width: 100%;
-  height: 50%;
   font-family: "Rock Salt", cursive;
-  font-size: 2.5em;
-  color: #000000;
+  font-size: 3em;
+  color: #ffffff;
   text-align: center;
   margin-right: 1em;
+  text-decoration: underline;
 }
 #sushi {
-  /* background: rgba(255, 255, 255, 0.2); */
   border-radius: 1em;
   width: 100%;
 }
@@ -87,6 +94,97 @@ body {
   100% {
     top: -10px;
   }
+}
+.menu {
+  font-family: inherit;
+  font-size: 1em;
+  padding-top: 3em;
+}
+.menu h2 {
+  font-size: 3em;
+}
+.menu h3 {
+  font-family: "Rock Salt", cursive;
+  font-size: 1.5em;
+}
+.menu-heading {
+  margin: 0;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #ccc;
+}
+.menu-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+.menu-item {
+  display: flex;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1em;
+  border-radius: 2em;
+}
+.menu-item:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.4);
+}
+.menu-item-image {
+  width: 7.5em;
+  height: auto;
+  margin-right: 1.5em;
+}
+.menu-item-text {
+  flex-grow: 1;
+}
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.menu-item-name {
+  margin-right: 1.5em;
+}
+.menu-item-description {
+  line-height: 1.5em;
+}
+.about {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2em;
+  padding-top: 1.5em;
+  max-width: 20em;
+  font-family: "Rock Salt", cursive;
+}
+.about p {
+  font-size: 0.5em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-bottom: 1.5em;
+  padding-top: 0em;
+}
+.fluidMedia {
+  position: relative;
+  padding-bottom: 56.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+  height: 0;
+  overflow: hidden;
+}
+.fluidMedia iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.subscribe-hr {
+  margin-top: 5em;
+}
+.subscribe-text {
+  text-align: center;
+  margin: 1em auto;
+}
+.subscribe-text strong {
+  font-size: 1.5em;
 }
 #form {
   max-width: 20em;
@@ -124,18 +222,6 @@ footer {
   color: inherit;
   font-size: 0.7em;
 }
-@media (max-width: 480px) {
-  #sushi-wrapper {
-    flex-direction: column;
-  }
-  #title {
-    font-size: 1.5em;
-  }
-  #sushi {
-    margin-top: 2em;
-    padding: 2em;
-  }
-}
 @media screen and (max-width: 600px) {
   .nav-bar li:not(:first-child) {
     display: none;
@@ -159,5 +245,31 @@ footer {
     float: none;
     display: block;
     text-align: left;
+  }
+  .menu {
+    font-size: 0.8em;
+  }
+  .menu-group {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    padding: 0;
+  }
+  .mobile-container {
+    padding: 2em;
+  }
+  #sushi-wrapper {
+    flex-direction: column;
+  }
+  #title {
+    font-size: 2em;
+    text-align: center;
+    margin-right: 0;
+  }
+  #sushi {
+    margin-top: 2em;
+    padding: 2em;
   }
 }

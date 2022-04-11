@@ -23,19 +23,15 @@
         <ul>
           <li>
             <a class="nav-link active" href="#home">Home</a>
-            <!--when click, take to corresponding spot in page-->
           </li>
           <li>
             <a class="nav-link" href="#menu">Menu</a>
-            <!--when click, take to corresponding spot in page-->
           </li>
           <li>
             <a class="nav-link" href="#about">About</a>
-            <!--when click, take to corresponding spot in page-->
           </li>
           <li>
-            <a class="nav-link" href="#subscribe">Subscribe</a>
-            <!--when click, take to corresponding spot in page-->
+            <a class="nav-link" href="#form">Subscribe</a>
           </li>
         </ul>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -43,16 +39,299 @@
         </a>
       </nav>
     </header>
-    <main class="container">
+    <main class="container" id="home">
       <div id="sushi-wrapper">
-        <div id="title">Samurai Sushi</div>
+        <h1 id="title">Samurai Sushi</h1>
         <div id="sushi">
-          <img src="images/sushi-roll.png" id="sushi-bounce" />
+          <img
+            src="images/sushi-roll.png"
+            alt="sushi roll bouncing"
+            id="sushi-bounce"
+          />
         </div>
       </div>
-      <div id="menu">
-        <h1>Menu</h1>
+      <div class="mobile-container">
+      <div class="menu" id="menu">
+        <h2>Menu</h2>
+        <h3 class="menu-heading">Appetizers</h3>
+        <div class="menu-group">
+          <div class="menu-item">
+            <img
+              src="images/rice.png"
+              alt="rice bowl"
+              class="menu-item-image"
+            />
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">White Rice</span>
+                <span class="menu-item-price">$2.99</span>
+              </h4>
+              <p class="menu-item-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nesciunt eum odit iusto quasi quisquam.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="images/seaweed.png"
+              alt="seaweed salad"
+              class="menu-item-image"
+            />
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Seaweed Salad</span>
+                <span class="menu-item-price">$3.99</span>
+              </h4>
+              <p class="menu-item-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nesciunt eum odit iusto quasi quisquam.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="images/miso.png"
+              alt="miso soup"
+              class="menu-item-image"
+            />
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Miso Soup</span>
+                <span class="menu-item-price">$1.99</span>
+              </h4>
+              <p class="menu-item-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nesciunt eum odit iusto quasi quisquam.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="images/gyoza.png" alt="gyoza" class="menu-item-image" />
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Gyoza</span>
+                <span class="menu-item-price">$4.99</span>
+              </h4>
+              <p class="menu-item-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nesciunt eum odit iusto quasi quisquam.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="images/tempura.png"
+              alt="tempura"
+              class="menu-item-image"
+            />
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Shrimp Tempura</span>
+                <span class="menu-item-price">$5.99</span>
+              </h4>
+              <p class="menu-item-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nesciunt eum odit iusto quasi quisquam.
+              </p>
+            </div>
+          </div>
+        </div>
+        <h3 class="menu-heading">Rolls & Hand Rolls</h3>
+        <div class="menu-group">
+          <div class="menu-item">
+            <img
+              src="images/teriyaki-roll.png"
+              alt="teriyaki sushi roll"
+              class="menu-item-image"
+            />
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Teriyaki Roll</span>
+                <span class="menu-item-price">$6.99</span>
+              </h4>
+              <p class="menu-item-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nesciunt eum odit iusto quasi quisquam.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="images/salmon-roll.png"
+              alt="salmon sushi roll"
+              class="menu-item-image"
+            />
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Salmon Roll</span>
+                <span class="menu-item-price">$6.99</span>
+              </h4>
+              <p class="menu-item-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nesciunt eum odit iusto quasi quisquam.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="images/veg-roll.png"
+              alt="vegetable sushi roll"
+              class="menu-item-image"
+            />
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Vegetable Roll</span>
+                <span class="menu-item-price">$4.99</span>
+              </h4>
+              <p class="menu-item-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nesciunt eum odit iusto quasi quisquam.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="images/tuna-hand-roll.png"
+              alt="tuna hand roll"
+              class="menu-item-image"
+            />
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Spicy Tuna Hand Roll</span>
+                <span class="menu-item-price">$6.99</span>
+              </h4>
+              <p class="menu-item-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nesciunt eum odit iusto quasi quisquam.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="images/avocado-hand-roll.png"
+              alt="avacado hand roll"
+              class="menu-item-image"
+            />
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Avocado Hand Roll</span>
+                <span class="menu-item-price">$4.99</span>
+              </h3>
+              <p class="menu-item-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nesciunt eum odit iusto quasi quisquam.
+              </p>
+            </div>
+          </div>
+        </div>
+        <h3 class="menu-heading">Samurai Special Rolls</h3>
+        <div class="menu-group">
+          <div class="menu-item">
+            <img
+              src="images/samurai-roll.png"
+              alt="samurai sushi roll"
+              class="menu-item-image"
+            />
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Samurai Roll</span>
+                <span class="menu-item-price">$10.99</span>
+              </h4>
+              <p class="menu-item-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nesciunt eum odit iusto quasi quisquam.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="images/love-roll.png"
+              alt="love sushi roll"
+              class="menu-item-image"
+            />
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Love Roll</span>
+                <span class="menu-item-price">$10.99</span>
+              </h4>
+              <p class="menu-item-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nesciunt eum odit iusto quasi quisquam.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="images/dragon-roll.png"
+              alt="dragon sushi roll"
+              class="menu-item-image"
+            />
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Dragon Roll</span>
+                <span class="menu-item-price">$12.99</span>
+              </h4>
+              <p class="menu-item-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nesciunt eum odit iusto quasi quisquam.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="images/cowboy-roll.png"
+              alt="spicy cowboy roll"
+              class="menu-item-image"
+            />
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Spicy Cowboy Roll</span>
+                <span class="menu-item-price">$10.99</span>
+              </h4>
+              <p class="menu-item-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nesciunt eum odit iusto quasi quisquam.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="images/rainbow-roll.png"
+              alt="rainbow roll"
+              class="menu-item-image"
+            />
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Rainbow Roll</span>
+                <span class="menu-item-price">$9.99</span>
+              </h4>
+              <p class="menu-item-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nesciunt eum odit iusto quasi quisquam.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="about" id="about">
+        <h2>About Sushi</h2>
+        <p>Learn more about the history of sushi, how to eat it, and much more.</p>
+        <div class="fluidMedia">
+          <iframe 
+            id="video"
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/MYquTY8mvnc" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <hr class="subscribe-hr">
+      <p class="subscribe-text">Sign up for our weekly specials today and receive <strong>10%</strong> off your first purchase.</p>
       <form id="form" action="https://www.freecodecamp.com/email-submit">
         <input
           name="email"
@@ -63,7 +342,7 @@
         />
         <input id="submit" type="submit" value="Subscribe" />
       </form>
-      <div id="video"></div>
+    </div>
     </main>
     <footer>&copy; 2022 Layla Krauss. All Rights Reserved.</footer>
     <script src="app.js"></script>

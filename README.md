@@ -1,4 +1,4 @@
-# Product Landing Page
+# [Product Landing Page](https://laylark.github.io/product-landing-page/)
 
 This repo is my product landing page for freeCodeCamp's Responsive Web Design Project.
 <br>
