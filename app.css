@@ -6,6 +6,7 @@ body {
   background-image: url("images/gradienta.jpg");
   background-size: cover;
   padding: 2em;
+  font-size: 16px;
   background-color: #14086a;
   color: #ffffff;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -190,7 +191,7 @@ body {
   max-width: 20em;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 1em;
-  padding: 1em 1em 1em 1em;
+  padding: 1em;
   box-sizing: border-box;
   margin: 2em auto;
 }
@@ -202,6 +203,7 @@ body {
   width: 100%;
   margin: auto;
   font-family: inherit;
+  font-size: 1em;
 }
 #submit {
   display: block;
@@ -260,6 +262,13 @@ footer {
   .mobile-container {
     padding: 2em;
   }
+  .nav-bar .icon {
+    padding-right: 1em;
+    font-size: 2.8em;
+  }
+  .nav-link {
+    font-size: 2em;
+  }
   #sushi-wrapper {
     flex-direction: column;
   }
@@ -271,5 +280,21 @@ footer {
   #sushi {
     margin-top: 2em;
     padding: 2em;
+  }
+  .menu-item {
+    font-size: 1em;
+  }
+  .about p {
+    font-size: 0.8em;
+  }
+  #email {
+    padding: 1em 1.5em;
+  }
+  #submit {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  footer {
+    padding-bottom: 2em;
   }
 }
