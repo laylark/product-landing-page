@@ -236,7 +236,7 @@ footer {
   .nav-bar li:not(:first-child) {
     display: none;
   }
-  #home {
+  #nav-home {
     display: block;
   }
   .nav-bar .icon {
