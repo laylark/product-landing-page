@@ -21,6 +21,14 @@ body {
   width: 100%;
   z-index: 100;
 }
+.nav-bar #header-img {
+  max-height: 3em;
+  margin: -1.1em;
+  padding: 0 0.5em;
+}
+.nav-bar .nav-img:hover {
+  background-color: #333;
+}
 .nav-bar ul {
   list-style: none;
   padding: 0;
@@ -228,6 +236,9 @@ footer {
   .nav-bar li:not(:first-child) {
     display: none;
   }
+  #home {
+    display: block;
+  }
   .nav-bar .icon {
     float: right;
     display: block;
@@ -248,6 +259,16 @@ footer {
     display: block;
     text-align: left;
   }
+  .nav-bar .icon {
+    padding-right: 0.5em;
+    font-size: 2em;
+  }
+  .nav-link {
+    font-size: 1.4em;
+  }
+  .nav-bar .nav-logo {
+    display: none !important;
+  }
   .menu {
     font-size: 0.8em;
   }
@@ -262,12 +283,15 @@ footer {
   .mobile-container {
     padding: 2em;
   }
+  .nav-bar #header-img {
+    padding-left: 0.5em;
+  }
   .nav-bar .icon {
-    padding-right: 1em;
-    font-size: 2.8em;
+    padding-right: 0.5em;
+    font-size: 2.5em;
   }
   .nav-link {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   #sushi-wrapper {
     flex-direction: column;
